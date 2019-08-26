@@ -1,40 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #2C3A47;
-  margin-top: 30px;
-}
+body { text-align: center; font-family: 'Open Sans', sans-serif; color: #2C3A47; margin-top: 30px; }
 
-body #search {
-  min-width: 100px;
-  height: 20px;
-  margin: 20px 10px 20px;
-  background-color: transparent;
-  border-radius: 2px;
-  border: 1px solid #02ac46;
-  padding: 1px 10px;
-  cursor: pointer;
-}
+body #search { min-width: 100px; height: 20px; margin: 20px 10px 20px; background-color: transparent; border-radius: 2px; border: 1px solid #02ac46; padding: 1px 10px; cursor: pointer; }
 
-body #search:hover {
-  color: #fff;
-  background-color: #02ac46;
-}
+body #search:hover { color: #fff; background-color: #02ac46; }
 
-body #country-name {
-  min-width: 150px;
-  height: 20px;
-  border: 1px solid #02ac46;
-}
+body #country-name { min-width: 150px; height: 20px; border: 1px solid #02ac46; }
 
-body #countries {
-  margin-top: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+body #countries { margin-top: 20px; }
