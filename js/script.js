@@ -9,20 +9,16 @@ function searchCountries() {
     let countryName = document.getElementById('country-name').value;
     if(!countryName.length) countryName = 'Poland';
     fetch(url + countryName)
-        .then(function(resp) {
-            return resp.json();
-        })
+        .then((resp) => resp.json())
         .then(showCountriesList)
-        .catch(function(error) {
-            console.log(error);
-        });
+        .catch((error) => console.log(error));
 }
 
 function showCountriesList(resp) {
     countriesList.innerHTML = '';
-    resp.forEach(function(item) {
+    resp.forEach(({name, nativeName, capital}) => {
         const liEl = document.createElement('li');
-        liEl.innerText = [item.name, item.nativeName, item.capital];
+        liEl.innerText = `${name}, ${nativeName}, ${capital}`;
         countriesList.appendChild(liEl);
     });
 }
